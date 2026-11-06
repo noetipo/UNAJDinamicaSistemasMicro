@@ -11,7 +11,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/noetipo/UNAJIngSoftware.git
+          uri: https://github.com/noetipo/UNAJDinamicaSistemasMicro.git
           searchPaths: config-data
           default-label: main
 
