@@ -10,12 +10,12 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class NwtmCategoriaServiceImpl implements CategoriaService {
+public class CategoriaServiceImpl implements CategoriaService {
 
     private final CategoriaRepository categoriaRepository;
 
     @Override
-    public List<NwtmCategoria> listar() {
+    public List<Categoria> listar() {
         return categoriaRepository.findAll();
     }
 
