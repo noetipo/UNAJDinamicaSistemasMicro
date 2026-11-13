@@ -1,7 +1,6 @@
 package com.ejemplo.mscatalogoservice.service.impl;
+import com.ejemplo.mscatalogoservice.entity.*;
 
-
-import com.ejemplo.mscatalogoservice.entity.Categoria;
 import com.ejemplo.mscatalogoservice.repository.CategoriaRepository;
 import com.ejemplo.mscatalogoservice.service.CategoriaService;
 import lombok.RequiredArgsConstructor;
@@ -11,12 +10,12 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class CategoriaServiceImpl implements CategoriaService {
+public class NwtmCategoriaServiceImpl implements CategoriaService {
 
     private final CategoriaRepository categoriaRepository;
 
     @Override
-    public List<Categoria> listar() {
+    public List<NwtmCategoria> listar() {
         return categoriaRepository.findAll();
     }
 
